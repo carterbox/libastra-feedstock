@@ -1,5 +1,4 @@
-{% set version = "2.4.1" %}
-{% set commit = "4f82d206545920b80429869970ee8c04270ca3c9" %}  # https://github.com/astra-toolbox/astra-toolbox/releases/tag/v2.4.1
+{% set version = "2.5.0" %}
 {% set build_number = 0 %}
 
 package:
@@ -7,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/astra-toolbox/astra-toolbox/archive/{{ commit }}.tar.gz
-  sha256: f9f7b1ac66ba0fdb84f24078ea103f64392e6fb46403cec26ca948d0f93ab268
+  url: https://github.com/astra-toolbox/astra-toolbox/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 267fbd65633c7b3cf9edb535e7ec756ee5a36f75d76dc9c691cc9fbb386e3a9f
   patches:
   # patch created from askorikov/astra-toolbox@release_2.4.1_cmake
     - cmake.patch
